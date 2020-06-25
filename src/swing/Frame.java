@@ -1,10 +1,14 @@
 package swing;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class Frame {
 
@@ -12,8 +16,18 @@ public class Frame {
 		
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
+		JLabel label = new JLabel("some text");
+		JButton btn1 = new JButton("Click"); // create button
+		JTextArea txtArea = new JTextArea(); // 많은 줄 작성할 때
+//		JTextField txtField = new JTextField(200); // 20만큼 칠 수 있음
 		
-		panel.add(new JLabel("안녕하세요")); // Label을 추가해
+		panel.setLayout(new BorderLayout());
+		
+		panel.add(label, BorderLayout.NORTH);
+//		panel.add(new JLabel("안녕하세요")); // Label을 추가해
+		panel.add(btn1, BorderLayout.WEST );
+		panel.add(txtArea, BorderLayout.CENTER);
+		
 		frame.add(panel); // Panel을 생성함
 		
 		frame.setVisible(true); // 화면이 처음에는 보이지 않기 때문에 true로 설정해
