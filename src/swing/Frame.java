@@ -36,7 +36,7 @@ public class Frame {
 		frame.setResizable(false); // 사이즈 변경불가능 하도
 		frame.setLocationRelativeTo(null); // 출력 위치 설정 null값으로 넣으면 자동으로 가운데 정렬
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // X버튼을 누르면 종료
-
+		
 	}
 	
 }
