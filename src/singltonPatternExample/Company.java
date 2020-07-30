@@ -2,7 +2,7 @@ package singltonPatternExample;
 
 public class Company {
 	
-	private static Company instance = new Company();
+	private static Company instance;
 
 	private Company() {}
 	
