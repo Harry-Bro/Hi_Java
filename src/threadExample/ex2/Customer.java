@@ -31,7 +31,7 @@ public class Customer {
 		return Balance;
 	}
 	
-	public synchronized boolean depositMyAccount(int money) {
+	public boolean depositMyAccount(int money) {
 		if(myMoney-money < 0) {
 			return false;
 		}
@@ -40,7 +40,7 @@ public class Customer {
 		return true;
 	}
 	
-	public synchronized boolean withDrawMyAccount(int money) {
+	public boolean withDrawMyAccount(int money) {
 		if(myAccount.getBalance() - money < 0) {
 			return false;
 		}
