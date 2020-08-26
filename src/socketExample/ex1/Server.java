@@ -29,8 +29,7 @@ public class Server {
 		if(!server.isClosed()) {
 			try {
 				server.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			} catch (IOException e) {		
 				e.printStackTrace();
 			}
 		}
