@@ -10,14 +10,10 @@ public class PEditMenu extends JMenu {
 	public PEditMenu() {
 		this.setText(Constants.EMenuBar.EDIT.getText());
 		
-		JMenuItem copyItem = new JMenuItem(Constants.EEditMenu.COPY.getText());
-		this.add(copyItem);
-		JMenuItem cutItem = new JMenuItem(Constants.EEditMenu.CUT.getText());
-		this.add(cutItem);
-		JMenuItem pasteItem = new JMenuItem(Constants.EEditMenu.PASTE.getText());
-		this.add(pasteItem);
-		JMenuItem deleteItem = new JMenuItem(Constants.EEditMenu.DELETE.getText());
-		this.add(deleteItem);
+		for(Constants.EEditMenu eFileMenu: Constants.EEditMenu.values()) {
+			JMenuItem menuItem = new JMenuItem(eFileMenu.getText());
+			this.add(menuItem);
+		}
 	}
 
 }

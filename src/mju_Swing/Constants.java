@@ -3,7 +3,7 @@ package mju_Swing;
 public class Constants {
 
 	public enum EMainFrame {
-		WIDTH(400),
+		WIDTH(450),
 		HEIGHT(600);
 		
 		private int size;
@@ -36,7 +36,7 @@ public class Constants {
 		NEW("New"),
 		OPEN("Oepn"),
 		SAVE("Save"),
-		SaveAs("Save-As"),
+		SAVEAS("Save-As"),
 		PRINT("Print"),
 		EXIT("Exit")
 		;
@@ -63,6 +63,25 @@ public class Constants {
 		private String text;
 		
 		EEditMenu(String text) {
+			this.text = text;
+		}
+		
+		public String getText() {
+			return this.text;
+		}
+		
+	}
+	
+	public enum ETOOLBAR {
+		
+		BASKET("장바구니"),
+		ENROLMENT("수강신청"),
+		PRIVACY("개인정보"),
+		GRADE("성적");
+		
+		private String text;
+		
+		ETOOLBAR(String text) {
 			this.text = text;
 		}
 		
