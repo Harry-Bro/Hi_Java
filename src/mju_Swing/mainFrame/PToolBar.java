@@ -1,10 +1,10 @@
-package mju_Swing;
-
-import java.awt.Image;
+package mju_Swing.mainFrame;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JToolBar;
+
+import mju_Swing.constants.Constants;
 
 public class PToolBar extends JToolBar {
 

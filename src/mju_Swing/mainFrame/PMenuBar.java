@@ -1,4 +1,4 @@
-package mju_Swing;
+package mju_Swing.mainFrame;
 
 import javax.swing.JMenuBar;
 

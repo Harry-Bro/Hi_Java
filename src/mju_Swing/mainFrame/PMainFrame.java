@@ -1,10 +1,12 @@
-package mju_Swing;
+package mju_Swing.mainFrame;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
+
+import mju_Swing.constants.Constants;
 
 public class PMainFrame extends JFrame {
 
@@ -23,17 +25,18 @@ public class PMainFrame extends JFrame {
 				);
 		this.setLayout(new GridLayout(2, 4)); // Layout Setting
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE); // X 버튼 누르면 프로그램을 종료해라
+		this.setVisible(true);
 		
 		// create and register components
 		this.pMenuBar = new PMenuBar();
 		this.setJMenuBar(pMenuBar);
-		
 		
 		this.pToolBar = new PToolBar();
 		this.add(this.pToolBar);
 		
 		this.pMainPanel = new PMainPanel();
 		this.add(this.pMainPanel);
+		
 	}
 
 }

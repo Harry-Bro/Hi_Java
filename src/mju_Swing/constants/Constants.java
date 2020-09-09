@@ -1,4 +1,4 @@
-package mju_Swing;
+package mju_Swing.constants;
 
 public class Constants {
 
@@ -87,6 +87,31 @@ public class Constants {
 		
 		public String getText() {
 			return this.text;
+		}
+		
+	}
+	
+	public enum ELoginDialog {
+		width("300"),
+		height("200"),
+		nameLabel("아이디 "),
+		sizeNameText("10"),
+		passwordLabel("비밀번호"),
+		sizePasswordText("10"),
+		okButtonLabel("ok"),
+		cancelButtonLabel("cancel");
+		
+		private String text;
+		private ELoginDialog(String text) {
+			this.text = text;
+		}
+		
+		public String getText() {
+			return this.text;
+		}
+		
+		public int getInt() {
+			return Integer.parseInt(text);
 		}
 		
 	}

@@ -1,7 +1,9 @@
-package mju_Swing;
+package mju_Swing.mainFrame;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+
+import mju_Swing.constants.Constants;
 
 public class PEditMenu extends JMenu {
 
