@@ -5,8 +5,8 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
-
 import mju_Swing.constants.Constants;
+import mju_Swing.valueObject.VUserInfo;
 
 public class PMainFrame extends JFrame {
 
@@ -23,7 +23,7 @@ public class PMainFrame extends JFrame {
 				Constants.EMainFrame.WIDTH.getSize(),
 				Constants.EMainFrame.HEIGHT.getSize()
 				);
-		this.setLayout(new GridLayout(2, 4)); // Layout Setting
+		this.setLayout(new BorderLayout()); // Layout Setting
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE); // X 버튼 누르면 프로그램을 종료해라
 		this.setVisible(true);
 		
@@ -32,10 +32,10 @@ public class PMainFrame extends JFrame {
 		this.setJMenuBar(pMenuBar);
 		
 		this.pToolBar = new PToolBar();
-		this.add(this.pToolBar);
+		this.add(this.pToolBar, BorderLayout.NORTH);
 		
 		this.pMainPanel = new PMainPanel();
-		this.add(this.pMainPanel);
+		this.add(this.pMainPanel, BorderLayout.CENTER);
 		
 	}
 

@@ -11,12 +11,16 @@ public class PToolBar extends JToolBar {
 	private static final long serialVersionUID = 1L;
 
 	public PToolBar() {
-				
+		
 		for(Constants.ETOOLBAR toolBar : Constants.ETOOLBAR.values()) {
 			String toolBarName = toolBar.getText();
-			JButton btnToolBar = new JButton(toolBarName);
-			ImageIcon icon = new ImageIcon(getClass().getResource("images/" + toolBarName + ".png"));
-			btnToolBar.setIcon(icon);
+			System.out.println(toolBarName);
+			ImageIcon icon = new ImageIcon("images/" + toolBarName + ".png");
+			System.out.println(icon);
+//			Image originImg = originIcon.getImage();
+//			Image changedImg = originImg.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+//			ImageIcon icon = new ImageIcon(changedImg);
+			JButton btnToolBar = new JButton(toolBarName, icon);
 			this.add(btnToolBar);
 		}
 		
