@@ -17,9 +17,6 @@ public class PToolBar extends JToolBar {
 			System.out.println(toolBarName);
 			ImageIcon icon = new ImageIcon("images/" + toolBarName + ".png");
 			System.out.println(icon);
-//			Image originImg = originIcon.getImage();
-//			Image changedImg = originImg.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-//			ImageIcon icon = new ImageIcon(changedImg);
 			JButton btnToolBar = new JButton(toolBarName, icon);
 			this.add(btnToolBar);
 		}
